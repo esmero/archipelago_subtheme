@@ -1,3 +1,23 @@
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+body.path-frontpage {
+  /* Margin bottom by footer height - none on front page */
+  margin-bottom: 0px;
+}
+
+.path-frontpage .feed-icons{
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a{
   font-family: 'Mukta', sans-serif;
 }
@@ -8,7 +28,35 @@ a{
 
 a:hover{
   color: #00cc7a;
+}
 
+pre code{
+  display: block;
+  padding:10px;
+  color:#00ff00;
+  background-color: #000;
+  margin-left: 8px;
+  width: 1010px;
+  overflow:scroll;
+  -moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px; /* future proofing */
+-khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+
+/*
+.form-control{
+  background-color: #fff;
+}
+*/
+
+#views-exposed-form-solr-search-content-page-1{
+  margin-right:14px;
+}
+
+/**menu and nav styles**/
+ul.navbar-nav li{
+  display:inline;
 }
 
 #navbar-main {
@@ -21,10 +69,6 @@ a:hover{
   font-size: .8em;
 }
 
-.path-frontpage #navbar-main {
-  margin-bottom: 0px;
-}
-
 .breadcrumb{
   background-color:#fff;
 }
@@ -34,64 +78,37 @@ a:hover{
   border-bottom: 1px solid #ccc;
 }
 
-#page .form-control{
-  background-color: #fff;
-}
-
-.path-frontpage .highlighted{
-  text-align: center;
-}
-
-.path-frontpage #main-wrapper{
-  display: none;
-}
-
 .navbar-dark .navbar-brand{
   font-size: 1.5em;
   color:#4dffb8;
   margin-left: 14px;
 }
 
-#views-exposed-form-solr-search-content-page-1{
-  margin-right:14px;
-}
-
-#block-useraccountmenu {
+.menu--account,
+.menu--main {
   position: relative;
   top:7px;
   clear:both;
 }
 
-#block-tools a{
+.menu--main {
+  margin-left:12px;
+  margin-right:12px;
+}
+
+.menu--tools a,
+#navbar-top.navbar-dark .nav-link{
   color:#b3ffe0;
 }
 
-
-#block-archipelagoinfoforhomepage{
-  display: block;
-  min-height:400px;
+.menu--tools a:hover,
+#navbar-top.navbar-dark .nav-link:hover{
+  color:#fff;
 }
-
-#block-archipelagoinfoforhomepage h2{
-  font-size: 40px;
-  padding-top:50px;
-}
-
-#block-archipelagoinfoforhomepage h3{
-  margin-bottom:50px;
-}
+/** END menu and nav styles**/
 
 h1.title{
-      font-size: 2rem;
-}
-
-.path-frontpage .highlighted{
-  background-color:  #d1d1e0;
-}
-
-.path-frontpage aside.container-fluid{
-  padding-left: 0px;
-  padding-right: 0px;
+  font-size: 2rem;
 }
 
 .field--name-display-field-copynode-formatted-metadata h2{
@@ -100,31 +117,29 @@ h1.title{
 
 /**home page promo stuff**/
 
-.promo, .promo-odd, .promo-even{
-  padding-left: 10%;
-  padding-right:10%;
-  min-height:400px;
-  padding-top:20px;
-}
-
 .promo{
-  min-height:800px;
-  background-image: url(http://ec2-3-81-3-204.compute-1.amazonaws.com/sites/default/files/2019-02/islands_1.jpg);
+  display: block;
+  margin-top:-68px;
+  width:100%;
+  height:900px;
+  background-image: url(../img/islands_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.promo p{
-  font-size: 1.5em;
-  line-height: 36px;
+
+.jumbotron{
+  margin-top:100px;
+  margin-left:10%;
+  margin-right: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
-.promo-odd p, .promo-even p{
-  font-size: 1.8em;
+.jumbotron .btn-primary{
+  background-color: #28a773;
+  border-color: #28a773;
 }
 
-.promo, .promo-even{
-  background-color:   #e3e3e3;
-}
 
 /**linked data, sidebars in general**/
 
@@ -155,6 +170,10 @@ h1.title{
 /**site footer**/
 
 .site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   margin-top:10px;
   background-color: #000;
 }
@@ -162,40 +181,75 @@ h1.title{
 .site-footer .block{
   border:none;
 }
-
-#footer-logo {
-  display:block;
-  width:125px;
-  background-color: #fff;
-  float:left;
-}
-
-#footer-metro-title{
-  font-size: 1.2em;
-  margin-left:20px;
-  float:left;
-  position:relative;
-  top:100px;
-}
+/**END site footer**/
 
 /**search results**/
 .view-solr-search-content h2{
   font-size: 1.4em;
 }
+/**END search results**/
 
+
+.view-archieplago-media-files{
+  margin-left:-10px;
+}
+
+.view-archieplago-media-files .container,
+.view-archieplago-media-files .table-responsive{
+  padding-left:0px;
+}
+
+
+
+.view-id-activity .views-form,
+.view-id-activity #edit-header{
+  margin-left: -30px;
+}
+
+.view-id-activity #edit-action{
+  display:block;
+  width:276px;
+}
+
+.form-item-langcode{
+  display:none;
+}
+
+#edit-submit--2{
+  background-color: #28a773;
+}
 /**webform**/
 .block-help{
   border-color:#fff;
 }
 
-.custom-form-input-heading{
+.custom-form-input-heading,
+.field--name-moderation-state label,
+.node-type-list a{
   font-weight:bold;
   font-size: 1.2em;
   margin-top:8px;
 }
 
+.node-type-list dt{
+  margin-top:20px;
+}
+
 .webform-progress-tracker{
   margin-left:10px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper{
+  margin-left:-30px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper .form-actions{
+  margin-left:16px;
+}
+
+.field--name-moderation-state{
+  margin-left:-30px;
+  width:300px;
 }
 
 .progress-step.is-active .progress-marker {
@@ -234,6 +288,7 @@ h1.title{
 .fas {
   color: rgba(40, 167, 115, 0.2);
 }
+/**END webform**/
 
 /** Layout **/
 
@@ -249,16 +304,16 @@ h1.title{
 
 /* node edit */
 #page details summary {
-    color: #333333; 
+    color: #333333;
 }
 
 div#sidebar_second.sidebar.col-md-3.order-last:empty {
-    max-width:0px !important; 
+    max-width:0px !important;
     width: 0px !important;
     min-height: 0px;
     flex: 0 0 0% !important;
     flex-basis: 0;
-} 
+}
 
 /* make sure hidden is respected */
 .hidden {
