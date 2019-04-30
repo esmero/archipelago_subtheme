@@ -1,13 +1,8 @@
-html {
-    position: relative;
-    min-height: 100%;
+html, body {
+    height: 100%;
     background-color: #fff;
 }
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
 
 body.path-frontpage {
     /* Margin bottom by footer height - none on front page */
@@ -20,6 +15,10 @@ body.path-frontpage {
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
     font-family: 'Mukta', sans-serif;
+}
+
+h1.title{
+  margin-top: 20px;
 }
 
 pre code {
@@ -384,9 +383,7 @@ p.lead-bottom {
 /**site footer**/
 
 .site-footer {
-    position: absolute;
     width: 100%;
-    margin-top: 10px;
     background-color: #000;
 }
 
