@@ -385,6 +385,7 @@ p.lead-bottom {
 /**site footer**/
 
 .site-footer {
+    bottom:0;
     position: absolute;
     width: 100%;
     margin-top: 10px;
