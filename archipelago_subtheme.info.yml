@@ -1,9 +1,10 @@
 name: Archipelago Base Theme
 type: theme
 description: 'Achipelago Bootstrap Theme.'
-# version: VERSION
-# core: 8.x
+core: 8.x
+core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
+project: 'Archipelago'
 
 libraries:
   - archipelago_subtheme/bootstrap_cdn
@@ -12,11 +13,12 @@ libraries:
 
 regions:
   top_header: 'Top Header'
-  top_header_form: "Top Header Form"
+  top_header_form: 'Top Header Form'
   header: Header
-  header_form: "Header Form"
+  header_form: 'Header Form'
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
+  editor_toolbar: 'Toolbar'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   highlighted: Highlighted
@@ -34,8 +36,4 @@ regions:
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
 
-# Information added by Drupal.org packaging script on 2018-08-09
-version: '8.x-4.17'
-core: '8.x'
-project: 'Archipelago'
-datestamp: 1533828192
+
