@@ -96,4 +96,10 @@ function archipelago_subtheme_preprocess_page(&$variables) {
 
  /* @var Attribute $variables['navbar_top_attributes'] */
   $variables['navbar_top_attributes']->addClass($expand_class);
+
+  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+  if ($fonts) {
+    $variables['#attached']['library'][] = 'archipelago_subtheme/' . $fonts;
+  }
+
 }
