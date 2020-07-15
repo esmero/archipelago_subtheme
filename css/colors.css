@@ -27,6 +27,9 @@ body {
 
 #navbar-main {
     background-color: #2b3951;
+    background-image: url(../img/just-waves.png);
+    background-repeat: repeat;
+    background-blend-mode: multiply;
 }
 
 
@@ -102,8 +105,6 @@ a:active,
 .sidebar .block {
     background-color: #f6f6f2;
     border-color: #f9f9f9;
-    box-shadow: 0 10px 40px -10px rgba(#0256B1,0.2);
-    transition: box-shadow .3s;
     border-radius: 6px;
 }
 
