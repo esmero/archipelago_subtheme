@@ -17,10 +17,6 @@ section.region-top-header-form {
     margin-top:0px;
 }
 
-#page .form-control {
-    background-color: rgba(233, 236, 238, 0.9);
-}
-
 #page details summary {
     color: #0071b3;
 }
