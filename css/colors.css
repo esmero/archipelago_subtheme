@@ -58,6 +58,16 @@ body {
     color: #b3ffe0;
 }
 
+.btn-warning {
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
+
+.btn-warning:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
 .navbar-toggler {
     border: 0;
     align-self: flex-start;
