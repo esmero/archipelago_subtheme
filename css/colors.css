@@ -23,13 +23,13 @@ body {
 
 #navbar-top {
     background-color: #000000;
+    background-image: url(../img/just-waves.png);
+    background-repeat: repeat;
+    background-blend-mode: multiply;
 }
 
 #navbar-main {
     background-color: #2b3951;
-    background-image: url(../img/just-waves.png);
-    background-repeat: repeat;
-    background-blend-mode: multiply;
 }
 
 
