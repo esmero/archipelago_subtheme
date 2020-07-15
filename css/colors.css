@@ -52,7 +52,10 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: #b3ffe0;
 }
-
+.site-name-slogan .navbar-brand-slogan {
+    padding-left: 1.25rem;
+    color: #f2f2f2;
+}
 
 #navbar-main .nav-link {
     color: #b3ffe0;
