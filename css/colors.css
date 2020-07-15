@@ -123,6 +123,7 @@ a:active,
 
 .ui-slider-pips [class*=ui-slider-pip-selected] {
     border-color: #007bff;
+    color: #007bff;
 }
 
 .btn-outline-primary {

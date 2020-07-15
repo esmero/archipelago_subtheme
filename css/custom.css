@@ -550,13 +550,13 @@ div#sidebar_second.sidebar.col-md-3.order-last:empty {
 
 .carousel.slide {
     background-color: rgba(31,31,33,0.9);
-    border-radious: 6px;
+    border-radius: 6px;
     box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
     transition: box-shadow .3s;
 }
 
 .carousel-inner {
-    border-radious: 6px;
+    border-radius: 6px;
 }
 
 .carousel-inner .active {
