@@ -36,9 +36,15 @@ body {
     -moz-border-radius: 7px;
     border-radius: 7px;
     background-color: #ffa500;
-    color: #f7f7f7;
+    border-color: #ffa500;
+    color: #4b82bf;
 }
 
+#views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+
+    border: solid 1px #b3ffe0;
+
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: #b3ffe0;
@@ -99,6 +105,15 @@ a:active,
     box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
     transition: box-shadow .3s;
     border-radius: 6px;
+}
+
+.sidebar h2 {
+    margin: 0 0 0.5em;
+    border-bottom: none;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 1.2em;
+    line-height: 1.2;
 }
 
 .btn-primary {
