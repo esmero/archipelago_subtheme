@@ -106,6 +106,10 @@ a:active,
     border-color: #007bff;
 }
 
+.ui-slider-pips [class*=ui-slider-pip-selected] {
+    border-color: #007bff;
+}
+
 .btn-outline-primary {
     border-color: #007bff;
 }
