@@ -68,7 +68,9 @@ body {
 .nav-link:hover, .nav-link:focus {
     color: #ffffff;
 }
-
+.nav-tabs .nav-link:hover, .nav-link:focus {
+    color: #4b82bf;
+}
 
 a,
 .link {
@@ -105,6 +107,13 @@ a:active,
 .sidebar .block {
     background-color: #f6f6f2;
     border-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+details summary {
+    background-color: #f6f6f2;
+    border-color: #f9f9f9;
+    padding: 12px;
     border-radius: 6px;
 }
 
