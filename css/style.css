@@ -52,25 +52,23 @@ section.region-top-header-form {
   width: 150px !important;
   cursor: pointer;
   outline: none;
-  -webkit-box-sizing: content-box;
   padding: 6px 15px 6px 32px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   background-color: #fff;
 }
 
 #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
-  width: 65px !important;
+  width: 100px !important;
   background-color: rgba(255,255,255,1);
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
   -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
   box-shadow: 0 0 5px rgba(109,207,246,.5);
-  -webkit-box-sizing: content-box;
   border: solid 1px #333333;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   padding: 6px 10px 6px 32px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -105,4 +103,12 @@ section.region-top-header-form {
 /* Facet display */
 .facet-item {
  word-wrap: break-word;
+}
+
+/* iaBookreader */
+.BRtoolbar {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
 }

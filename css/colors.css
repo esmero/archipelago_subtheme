@@ -4,7 +4,11 @@ body {
     color: #3b3b3b;
     background: #f2f2f2;
 }
-
+/* ---------- IAbookreader ----------- */
+.BRtoolbar {
+  color: #3b3b3b;
+  background: #f2f2f2 !important;
+}
 #page,
 #main-wrapper,
 .region-primary-menu .menu-item a.is-active,
@@ -12,8 +16,11 @@ body {
     background: #ffffff;
 }
 
+
+
+
 .tabs ul.primary li a.is-active {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .tabs ul.primary li.is-active a {
@@ -23,7 +30,6 @@ body {
 
 #navbar-top {
     background-color: #000000;
-    background-image: url(../img/just-waves.png);
     background-repeat: repeat;
     background-blend-mode: multiply;
 }
@@ -54,7 +60,7 @@ body {
 }
 .site-name-slogan .navbar-brand-slogan {
     padding-left: 1.25rem;
-    color: #f2f2f2;
+    color: #ffffff;
 }
 
 #navbar-main .nav-link {
@@ -69,6 +75,14 @@ body {
 .btn-warning:hover {
     background-color: #007bff;
     border-color: #007bff;
+}
+nav > ul > li.active.nav-item a {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+div.webform-progress > ul > li.progress-step.is-active > span.progress-marker {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
 }
 
 .navbar-toggler {
@@ -87,10 +101,14 @@ body {
 
 a,
 .link {
-    color: #4b82bf;
+    color: #4b82bf !important;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 3px;
 }
 a {
-    color: #4b82bf;
+    color: #4b82bf !important;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 3px;
 }
 
 
@@ -98,14 +116,17 @@ a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-    color: #4b82bf;
+    color: #4b82bf !important;
     decoration:none;
 }
 
 a:active,
 .link:active {
-    color: #4b82bf;
+    color: #4b82bf !important;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 3px;
 }
+
 
 .page-item.active .page-link {
     background-color: #0071b3;
@@ -114,8 +135,14 @@ a:active,
 
 .page-link,
 .page-link:hover {
-    color: #0071b3;
+    color: #0071b3 !important;
 }
+
+dt {
+  border-left-width: 3px;
+  border-color: #007bff;
+}
+
 
 .sidebar .block {
     background-color: #f6f6f2;
@@ -140,28 +167,27 @@ details summary {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
 }
 
 .ui-slider-pips [class*=ui-slider-pip-selected] {
     border-color: #007bff;
-    color: #007bff;
+    color: #007bff !important;
 }
 
 .btn-outline-primary {
-    border-color: #007bff;
+    border-color: #007bff !important;
 }
 
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #0256b1;
+    background-color:#0256b1 !important;
 }
 
 .site-footer {
     background: #f2f2f2;
-    background-image: url(../img/what-the-hex.png);
     background-repeat: repeat;
     background-blend-mode: multiply;
 }

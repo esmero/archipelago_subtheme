@@ -23,7 +23,9 @@ body.path-frontpage {
 .content {
     margin-bottom: 2rem;
 }
-
+div[data-drupal-selector="edit-field-layout"] {
+  background: #ffffff;
+}
 pre code {
     display: block;
     padding: 10px;
@@ -87,7 +89,7 @@ pre code {
 
 #navbar-top div:last-child {
     margin-left: auto;
-    align-self: flex-start;
+    align-self: center;
 }
 
 
