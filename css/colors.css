@@ -85,6 +85,16 @@ div.webform-progress > ul > li.progress-step.is-active > span.progress-marker {
   border-color: #007bff !important;
 }
 
+div.webform-progress > ul > li > span.progress-text > span {
+  color: #4b82bf !important;
+}
+div.webform-progress > ul > li > span.progress-text > span:hover {
+  color: #4b82bf !important;
+  text-decoration-color: #007bff;
+  text-decoration-thickness: 3px;
+}
+
+
 .navbar-toggler {
     border: 0;
     align-self: flex-start;
