@@ -40,7 +40,6 @@ body {
 
 
 .views-exposed-form form[action="/search"] div[data-drupal-selector="edit-actions"] > button[value="Search"] {
-    padding: .5rem;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
@@ -64,7 +63,7 @@ body {
 #navbar-main .nav-link {
     color: #b3ffe0;
 }
-li.nav-item {
+nav.navbar li.nav-item {
   border-left-width: 3px;
   border-left-color: #007bff;
   border-left-style: solid;
@@ -164,7 +163,9 @@ dt {
   border-left-width: 3px;
   border-color: #007bff;
   border-left-style: solid;
+  padding-left: 0.5em;
 }
+
 
 
 .sidebar .block {
@@ -173,11 +174,16 @@ dt {
     border-radius: 6px;
 }
 
-details summary {
-    background-color: #f6f6f2;
-    border-color: #f9f9f9;
-    padding: 12px;
-    border-radius: 6px;
+#page details summary {
+  color: #0071b3;
+  background-color: #f9f9f9;
+  margin-block-end: 0.5em;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+#page details details-wrapper {
+  background-color: #f9f9f9;
 }
 
 .sidebar h2 {
