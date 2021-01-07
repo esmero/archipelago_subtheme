@@ -50,9 +50,7 @@ body {
 }
 
 #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
-
     border: solid 1px #b3ffe0;
-
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -65,6 +63,16 @@ body {
 
 #navbar-main .nav-link {
     color: #b3ffe0;
+}
+li.nav-item {
+  border-left-width: 3px;
+  border-left-color: #007bff;
+  border-left-style: solid;
+}
+
+main.main-content div.content {
+  background-color: #f6f6f2;
+  border-radius: 6px;
 }
 
 .btn-warning {
@@ -80,6 +88,7 @@ nav > ul > li.active.nav-item a {
   background-color: #007bff !important;
   border-color: #007bff !important;
 }
+
 div.webform-progress > ul > li.progress-step.is-active > span.progress-marker {
   background-color: #007bff !important;
   border-color: #007bff !important;
@@ -88,19 +97,22 @@ div.webform-progress > ul > li.progress-step.is-active > span.progress-marker {
 div.webform-progress > ul > li > span.progress-text > span {
   color: #4b82bf !important;
 }
+
 div.webform-progress > ul > li > span.progress-text > span:hover {
   color: #4b82bf !important;
   text-decoration-color: #007bff;
   text-decoration-thickness: 3px;
 }
 
+div > div.carousel-item.active > div > h3 {
+  background-color: #ffffff;
+}
 
 .navbar-toggler {
     border: 0;
     align-self: flex-start;
     margin-top: 0.5rem;
 }
-
 
 .nav-link:hover, .nav-link:focus {
     color: #ffffff;
@@ -151,6 +163,7 @@ a:active,
 dt {
   border-left-width: 3px;
   border-color: #007bff;
+  border-left-style: solid;
 }
 
 
@@ -197,7 +210,7 @@ details summary {
 }
 
 .site-footer {
-    background: #f2f2f2;
+    background: #292929;
     background-repeat: repeat;
     background-blend-mode: multiply;
 }

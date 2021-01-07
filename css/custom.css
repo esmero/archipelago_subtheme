@@ -22,7 +22,9 @@ body.path-frontpage {
 
 .content {
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
+
 div[data-drupal-selector="edit-field-layout"] {
   background: #ffffff;
 }
@@ -247,13 +249,10 @@ pre code {
 /** END search box **/
 
 h1.title {
-    font-size: 2rem;
+
     margin-top: 1.25rem;
 }
 
-.field--name-display-field-copynode-formatted-metadata h2 {
-    font-size: 1.3em;
-}
 
 /**home page promo stuff**/
 
@@ -491,7 +490,7 @@ p.lead-bottom {
 /**search results**/
 
 .view-solr-search-content h2 {
-    font-size: 1.4em;
+
 }
 
 /**END search results**/
@@ -529,10 +528,9 @@ p.lead-bottom {
 /** Layout **/
 
 .layout--twocol {
-    margin: 0 0 1em;
-    padding-bottom: 5px;
+    margin: 0 0 1rem;
+    padding-bottom: 1rem;
     text-shadow: 0 1px 0 #fff;
-    font-size: 1.071em;
     line-height: 1.2;
     border-bottom: 1px solid rgba(165, 165, 165, 0.3);
 }
