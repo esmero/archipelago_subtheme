@@ -27,6 +27,10 @@ body {
     background-color: #ffffff;
     border-bottom-color: #ffffff;
 }
+table tr th {
+  background: #000000;
+  border-bottom-style: none;
+}
 
 #navbar-top {
     background-color: #000000;
@@ -83,7 +87,7 @@ main.main-content div.content {
     background-color: #007bff;
     border-color: #007bff;
 }
-nav > ul > li.active.nav-item a {
+nav > ul > li.active.nav-item > a {
   background-color: #007bff !important;
   border-color: #007bff !important;
 }

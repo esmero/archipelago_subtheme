@@ -96,12 +96,12 @@ section.region-top-header-form {
 /* Content */
 .layout--onecol {
   -webkit-flex-direction: row;  /* Safari */
-  flex-direction:  column;
+  flex-direction: column;
   margin-bottom: 2em;
 }
 
 main.main-content div.content {
-  padding: 15px 15px;
+  padding: 1em 0 1em 0
 }
 
 /* Facet display */
@@ -115,4 +115,12 @@ main.main-content div.content {
   border-top-right-radius: 0.25rem;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
+}
+
+/* drop down widgets */
+.js td.views-field-operations .dropbutton-wrapper {
+  position: relative;
+}
+.js td.views-field-operations .dropbutton-wrapper .dropbutton-widget {
+  position: absolute;
 }
