@@ -98,6 +98,7 @@ section.region-top-header-form {
   -webkit-flex-direction: row;  /* Safari */
   flex-direction: column;
   margin-bottom: 2em;
+  margin-left: 2em;
 }
 
 main.main-content div.content {
