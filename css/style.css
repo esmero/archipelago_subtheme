@@ -105,6 +105,10 @@ section.region-top-header-form {
   margin-top: 2em;
 }
 
+#edit-actions {
+  margin-left: 2em;
+}
+
 main.main-content div.content {
   padding: 1em 0 1em 0
 }

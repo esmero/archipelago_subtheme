@@ -35,14 +35,9 @@
     padding-right:0 !important;
 }
 
-[data-drupal-selector="edit-content"] > .form-group {
-    padding-left:1rem !important;
-    padding-right:1rem !important;
-
-}
 [data-drupal-selector="edit-footer"] {
-    padding-left:0 !important;
-    padding-right:0 !important;
+    padding-left:2em !important;
+    padding-right:2em !important;
 }
 
 [data-drupal-selector="edit-footer"] .form-group {
@@ -51,8 +46,8 @@
 }
 
 [data-drupal-selector="edit-footer"] > .form-group {
-    padding-left:1rem !important;
-    padding-right:1rem !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
 }
 
 
@@ -168,6 +163,9 @@
     padding: 0 0.3125rem; /* 0 5px */
 }
 
+.webform-actions button {
+  margin-top:1em;
+}
 /**
  * Throbber.
  */
