@@ -92,19 +92,22 @@ nav > ul > li.active.nav-item > a {
   border-color: #007bff !important;
 }
 
-div.webform-progress > ul > li.progress-step.is-active > span.progress-marker {
-  background-color: #007bff !important;
-  border-color: #007bff !important;
+/* Webform progress tracker */
+.webform-progress-tracker .progress-title[role="link"] {
+  color: #4b82bf 
 }
 
-div.webform-progress > ul > li > span.progress-text > span {
-  color: #4b82bf !important;
-}
-
-div.webform-progress > ul > li > span.progress-text > span:hover {
-  color: #4b82bf !important;
-  text-decoration-color: #007bff;
+.webform-progress-tracker .progress-title[role="link"]:hover,
+.webform-progress-tracker .progress-title[role="link"]:focus {
+  text-decoration: underline;
+  color: #4b82bf;
+  text-decoration-color:#4b82bf;
   text-decoration-thickness: 3px;
+}
+
+.webform-progress-tracker .progress-step.is-active .progress-marker,
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker {
+  background-color: #4b82bf;
 }
 
 div > div.carousel-item.active > div > h3 {
