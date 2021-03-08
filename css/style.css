@@ -30,11 +30,13 @@ section.region-top-header-form {
 
 /* Exposed Solr Search Form */
 
-#views-exposed-form-solr-search-content-page-1 label {
+#views-exposed-form-solr-search-content-page-1 label, #views-exposed-form-solr-search-content-grid label  {
   display:none
 }
 
-#views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete:before {
+
+
+#views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete:before, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete:before {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -48,7 +50,7 @@ section.region-top-header-form {
   padding:4px 6px 8px 6px;
   pointer-events: none;
 }
-#views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+#views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
   width: 24rem !important;
   cursor: pointer;
   outline: none;
@@ -59,7 +61,7 @@ section.region-top-header-form {
   background-color: #fff;
 }
 
-#views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+#views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
   width: 12rem !important;
   background-color: rgba(255,255,255,1);
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -86,6 +88,36 @@ section.region-top-header-form {
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete.ui-autocomplete-loading:focus {
   background-image: url(../../../../core/misc/throbber-active.gif);
 }
+
+/* View Link changers */
+div.view-header > a.views-display-link.views-display-link-page_1::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7a4";
+  margin-right: 0.5em;
+}
+/* View Link changers */
+div.view-header > a.views-display-link.views-display-link-grid::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00a";
+  margin-right: 0.5em;
+}
+
+div.view-header > a.views-display-link {
+  margin-left: 1em;
+}
+
 
 /* Navigation */
 .sidebar nav ul.nav {
@@ -133,3 +165,28 @@ main.main-content div.content {
 .js td.views-field-operations .dropbutton-wrapper .dropbutton-widget {
   position: absolute;
 }
+
+/* lazyload */
+img.iiif-lazy:not([data-loaded='true']) {
+  background-color: #535353;
+  margin: 0.5em auto;
+  border: 0;
+  animation: pulse 5s infinite;
+  min-height: 60px;
+  min-width:60px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #535353;
+  }
+  60% {
+    background-color: #9a9f9a;
+  }
+  100% {
+    background-color: #535353;
+  }
+}
+
+
+
