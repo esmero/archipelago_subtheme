@@ -176,12 +176,12 @@ pre code {
         align-items: flex-start;
     }
 
-    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
         width: 220px !important;
         flex: 1;
         transition: none !important;
     }
-    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
         transition: none !important;
     }
 }
@@ -196,12 +196,12 @@ pre code {
         align-items: flex-start;
     }
 
-    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
         width: 175px !important;
         flex: 1;
         transition: none !important;
     }
-    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input{
         transition: none !important;
     }
     .jumbotron {
@@ -233,7 +233,6 @@ pre code {
 .block-views-exposed-filter-blocksolr-search-content-page-1 {
     display: flex;
     position: relative;
-    margin-right: 5px;
 }
 
 
