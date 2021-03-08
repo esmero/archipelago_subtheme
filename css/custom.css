@@ -21,7 +21,6 @@ body.path-frontpage {
 
 
 .content {
-    margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -43,8 +42,12 @@ pre code {
     -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
-/* FA and incons */
+/* FA and icons */
 /* this is a little bit tricky. */
+
+#navbar-top {
+  align-items: flex-start;
+}
 
 .nav-item .fa-li {
     left: 0em !important;
@@ -91,7 +94,6 @@ pre code {
 
 #navbar-top div:last-child {
     margin-left: auto;
-    align-self: center;
 }
 
 
