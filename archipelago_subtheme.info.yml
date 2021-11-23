@@ -4,7 +4,6 @@ description: 'Achipelago Bootstrap Theme.'
 core: 8.x
 core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
-project: 'Archipelago'
 
 libraries:
   - archipelago_subtheme/bootstrap_cdn
