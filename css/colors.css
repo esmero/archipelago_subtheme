@@ -6,8 +6,8 @@ body {
 }
 /* ---------- IAbookreader ----------- */
 .BRtoolbar {
-  color: #3b3b3b;
-  background: #f2f2f2 !important;
+    color: #3b3b3b;
+    background: #f2f2f2 !important;
 }
 #page,
 #main-wrapper,
@@ -28,8 +28,8 @@ body {
     border-bottom-color: #ffffff;
 }
 table tr th {
-  background: #000000;
-  border-bottom-style: none;
+    background: #000000;
+    border-bottom-style: none;
 }
 
 #navbar-top {
@@ -49,7 +49,7 @@ table tr th {
     border-radius: 7px;
     background-color: #ffa500;
     border-color: #ffa500;
-    color: #4b82bf;
+    color: #f7f7f7;
 }
 
 #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
@@ -68,14 +68,14 @@ table tr th {
     color: #b3ffe0;
 }
 nav.navbar li.nav-item {
-  border-left-width: 3px;
-  border-left-color: #007bff;
-  border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: #007bff;
+    border-left-style: solid;
 }
 
 main.main-content div.content {
-  background-color: #f6f6f2;
-  border-radius: 6px;
+    background-color: #f6f6f2;
+    border-radius: 6px;
 }
 
 .btn-warning {
@@ -88,30 +88,30 @@ main.main-content div.content {
     border-color: #007bff;
 }
 nav > ul > li.active.nav-item > a {
-  background-color: #007bff !important;
-  border-color: #007bff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
 }
 
 /* Webform progress tracker */
 .webform-progress-tracker .progress-title[role="link"] {
-  color: #4b82bf 
+    color: #4b82bf 
 }
 
 .webform-progress-tracker .progress-title[role="link"]:hover,
 .webform-progress-tracker .progress-title[role="link"]:focus {
-  text-decoration: underline;
-  color: #4b82bf;
-  text-decoration-color:#4b82bf;
-  text-decoration-thickness: 3px;
+    text-decoration: underline;
+    color: #4b82bf;
+    text-decoration-color:#4b82bf;
+    text-decoration-thickness: 3px;
 }
 
 .webform-progress-tracker .progress-step.is-active .progress-marker,
 .webform-progress-tracker .progress-step.is-active:hover .progress-marker {
-  background-color: #4b82bf;
+    background-color: #4b82bf;
 }
 
 div > div.carousel-item.active > div > h3 {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .navbar-toggler {
@@ -127,28 +127,27 @@ div > div.carousel-item.active > div > h3 {
     color: #4b82bf;
 }
 
-a,
 .link {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
     text-decoration-thickness: 3px;
 }
-a {
+a:not(.toolbar-item) {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
     text-decoration-thickness: 3px;
 }
 
 
-a:hover,
-a:focus,
+a:not(.toolbar-item):hover,
+a:not(.toolbar-item):focus,
 .link:hover,
 .link:focus {
     color: #4b82bf !important;
     decoration:none;
 }
 
-a:active,
+a:not(.toolbar-item):active,
 .link:active {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
@@ -167,10 +166,10 @@ a:active,
 }
 
 dt {
-  border-left-width: 3px;
-  border-color: #007bff;
-  border-left-style: solid;
-  padding-left: 0.5em;
+    border-left-width: 3px;
+    border-color: #007bff;
+    border-left-style: solid;
+    padding-left: 0.5em;
 }
 
 
@@ -182,16 +181,16 @@ dt {
 }
 
 #page details summary {
-  color: #0071b3;
-  background-color: #f9f9f9;
-  margin-block-end: 0.5em;
-  padding: 12px;
-  border-radius: 6px;
+    color: #0071b3;
+    background-color: #f9f9f9;
+    margin-block-end: 0.5em;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 #page details div.details-wrapper {
-  background-color: #f9f9f9;
-  padding-left: 1em;
+    background-color: #f9f9f9;
+    padding-left: 1em;
 }
 
 .sidebar h2 {
@@ -231,10 +230,20 @@ dt {
 
 /* Node edit buttons */
 #edit-submit {
-  background-color: #0a8c7d;
+    background-color: #0a8c7d;
 }
+
+input.form-control.button {
+    background-color: #0a8c7d;
+    color: #f7f7f7;
+}
+
+input.form-control.button:hover, input.form-control.button:focus {
+    background-color:#0256b1 !important;
+}
+
 #edit-preview {
-  background-color: #0a8c7d;
+    background-color: #0a8c7d;
 }
 
 .dropdown-item.active, .dropdown-item:active {
