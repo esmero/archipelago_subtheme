@@ -180,7 +180,7 @@ dt {
     border-radius: 6px;
 }
 
-#page details summary {
+#page details summary, .ui-dialog details summary {
     color: #0071b3;
     background-color: #f9f9f9;
     margin-block-end: 0.5em;
@@ -188,7 +188,7 @@ dt {
     border-radius: 6px;
 }
 
-#page details div.details-wrapper {
+#page details div.details-wrapper, .ui-dialog div.details-wrapper {
     background-color: #f9f9f9;
     padding-left: 1em;
 }
