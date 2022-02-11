@@ -7,6 +7,9 @@ archipelago_subtheme.settings:
     bootstrap_barrio_library:
       type: text
       label: 'Library'
+    bootstrap_barrio_source:
+      type: text
+      label: 'Load library'
     bootstrap_barrio_sidebar_position:
       type: text
       label: 'Sidebar Position'
@@ -34,6 +37,9 @@ archipelago_subtheme.settings:
     bootstrap_barrio_fluid_container:
       type: integer
       label: 'Enabled'
+    bootstrap_barrio_image_fluid:
+      type: integer
+      label: 'Apply img-fluid style to all content images'
     bootstrap_barrio_button:
       type: integer
       label: 'Convert input submit to button element'  
@@ -55,6 +61,9 @@ archipelago_subtheme.settings:
     bootstrap_barrio_navbar_top_background:
       type: text
       label: 'Navbar top background color'  
+    bootstrap_barrio_navbar_top_class:
+      type: text
+      label: 'Custom classes for Navbar Top'
     bootstrap_barrio_navbar_position:
       type: text
       label: 'Position'
@@ -70,6 +79,18 @@ archipelago_subtheme.settings:
     bootstrap_barrio_navbar_container:
       type: text
       label: 'Container'
+    bootstrap_barrio_navbar_class:
+      type: text
+      label: 'Custom classes for Navbar'
+    bootstrap_barrio_navbar_flyout:
+      type: integer
+      label: 'Flyout style main menu'
+    bootstrap_barrio_navbar_slide:
+      type: integer
+      label: 'Sliding navbar'
+    bootstrap_barrio_tabs_style:
+      type: text
+      label: 'Tabs style'
     ###### Region
     bootstrap_barrio_region_clean_top_header:
       type: text
@@ -262,6 +283,9 @@ archipelago_subtheme.settings:
     bootstrap_barrio_icons:
       type: text
       label: 'Icon set'
+    bootstrap_barrio_bootstrap_icons:
+      type: integer
+      label: 'Use bootstrap icons'
     #### System messages.
     bootstrap_barrio_system_messages:
       type: text
