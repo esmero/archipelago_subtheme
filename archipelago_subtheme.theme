@@ -103,3 +103,32 @@ function archipelago_subtheme_preprocess_page(&$variables) {
   }
 
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for field.html.twig.
+ *
+ * When a field title field has a fontawesome class, create
+ * an <i> tag for hold the fontawesome glyph and prepend it
+ * to the title.
+ *
+ */
+function archipelago_subtheme_preprocess_field(&$variables) {
+  if($variables['field_name'] == 'node_title') {
+    foreach($variables['items'] as &$item) {
+      foreach($item['content'] as &$content) {
+        if(!empty($content['#context']['attributes']) && !empty($content['#context']['wrapper'])) {
+          /** @var Drupal\Core\Template\Attribute $attributes */
+          $attributes = $content['#context']['attributes']->storage();
+          if(!empty($attributes['class'])) {
+            $class = $attributes['class']->__toString();
+            if(strpos($class, 'fas') !== FALSE && $content['#context']['wrapper'] != 'i') {
+              // Running the output through t() marks it as "safe" so that the markup not be sanitized.
+              $content['#context']['output'] = t('<i class="' . $class . '"></i>' . $content['#context']['output']);
+              $content['#context']['attributes']->removeClass($class);
+            }
+          }
+        }
+      }
+    }
+  }
+}
