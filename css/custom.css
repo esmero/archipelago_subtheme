@@ -67,6 +67,13 @@ pre code {
     padding-left: 30px;
 }
 
+/* Bootstrap Barrio 5.5 adds white background to buttons */
+
+#navbar-top .form-actions {
+  background-color: transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 /**menu and nav styles**/
 
@@ -106,12 +113,6 @@ pre code {
     flex-flow: column;
     -webkit-flex-flow: column wrap; /* Safari 6.1+ */
 }
-
-
-#navbar-top .form-inline.navbar-form {
-    margin-top:0.385rem;
-}
-
 
 @media all and (max-width: 75em) {
     .navbar-expand-lg .navbar-collapse {

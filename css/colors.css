@@ -94,7 +94,7 @@ nav > ul > li.active.nav-item > a {
 
 /* Webform progress tracker */
 .webform-progress-tracker .progress-title[role="link"] {
-    color: #4b82bf 
+    color: #4b82bf
 }
 
 .webform-progress-tracker .progress-title[role="link"]:hover,
@@ -215,6 +215,7 @@ dt {
 .btn-primary:hover,
 .btn-primary:focus {
     background-color:#0256b1 !important;
+    border-color: #0256b1 !important;
 }
 
 .site-footer {
