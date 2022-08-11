@@ -60,7 +60,6 @@ table tr th {
     color: #b3ffe0;
 }
 .site-name-slogan .navbar-brand-slogan {
-    padding-left: 1.25rem;
     color: #ffffff;
 }
 
@@ -183,11 +182,6 @@ dt {
     border-radius: 6px;
 }
 
-#page details div.details-wrapper, .ui-dialog div.details-wrapper {
-    background-color: #f9f9f9;
-    padding-left: 1em;
-}
-
 .sidebar h2 {
     margin: 0 0 0.5em;
     border-bottom: none;
@@ -216,6 +210,12 @@ dt {
 .btn-primary:focus {
     background-color:#0256b1 !important;
     border-color: #0256b1 !important;
+}
+
+
+.form-check-input:checked {
+  background-color: #0256b1 !important;
+  border-color: #0256b1 !important;
 }
 
 .site-footer {

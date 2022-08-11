@@ -130,7 +130,6 @@ div.view-header > a.views-display-link {
   -webkit-flex-direction: row;  /* Safari */
   flex-direction: column;
   margin-bottom: 2em;
-  margin-left: 2em;
 }
 
 .layout--onecol div.field {
@@ -138,7 +137,6 @@ div.view-header > a.views-display-link {
 }
 
 #edit-actions {
-  margin-left: 2em;
 }
 
 main.main-content div.content {
