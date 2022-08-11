@@ -85,14 +85,8 @@ pre code {
     color: #fff;
     font-weight: 100;
     font-size: 1.5rem;
-    padding-left: 1.25rem;
     font-weight: 100;
 }
-
-.site-name-slogan .navbar-brand-slogan {
-    padding-left: 1.25rem;
-}
-
 
 .nav.navbar-nav {
     padding-top: .3125rem;
@@ -143,18 +137,10 @@ pre code {
 
     .navbar-expand-lg .navbar-collapse .nav-link {
         padding-left: 1rem;
-
-
     }
-   /* #navbar-top.navbar-expand-lg .navbar-collapse .nav-link::before {
-        content: "> ";
-        display:inline-block;
-        color:#B3FFE3;
-    }*/
 
     .navbar-expand-lg .navbar-collapse .nav-link:hover {
         background: #FFFFFF;
-
     }
 
     .navbar-dark .navbar-brand {
@@ -165,6 +151,10 @@ pre code {
         font-weight: 100;
         padding-top: 0.7rem;
     }
+    .navbar-brand-slogan {
+      padding-left: 1.25rem;
+    }
+
 
     .collapsing {
         transition: height 0.1s linear;
@@ -183,12 +173,13 @@ pre code {
     }
 
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 220px !important;
+        width: 100% !important;
         flex: 1;
         transition: none !important;
     }
     #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
         transition: none !important;
+        width: 100% !important;
     }
 }
 
@@ -203,16 +194,15 @@ pre code {
     }
 
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 175px !important;
+        width: 100% !important;
+        max-width: 175px;
         flex: 1;
         transition: none !important;
     }
     #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input{
         transition: none !important;
-    }
-    .jumbotron {
-        margin-left:0!important;
-        margin-right:0!important;
+        width: 100% !important;
+        max-width: 175px;
     }
 
 }
@@ -251,13 +241,17 @@ pre code {
     display:none
 }
 
-
-
 /** END search box **/
 
 h1.title {
-
     margin-top: 1.25rem;
+}
+
+/** Release 1.0.0 Bootstrap 5 gives these negative margins making it overlap with a viewer/anything before **/
+
+.field .blockquote-footer {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
 }
 
 
@@ -273,167 +267,6 @@ h1.title {
     background-color: #e9ecef;
 }
 
-.background-front {
-    background-size: cover;
-    background-image: url(../img/front-colour.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.background-irun {
-    background-size: cover;
-    background-image: url(../img/irun-color.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.promo {
-    display: flex;
-    width: 100%;
-    padding:2%;
-    height: inherit;
-    justify-content: center;
-}
-
-.promo .jumbotron .container .row {
-    justify-content: center;
-}
-
-.promo2 {
-    display: flex;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding:2%;
-    height: inherit;
-}
-
-.promo .image-credit {
-    font-size: xx-small;
-    color: rgb(109, 207, 246);
-    opacity: 0.5;
-    flex-flow: row;
-    align-self: flex-end;
-    margin-top: auto;
-    justify-content: flex-start;
-    margin-left: auto;
-}
-
-.promo2 .jumbotron a.btn-primary {
-    margin-inline-end:2%;
-    margin-bottom:1%;
-}
-
-.promo2 .jumbotron {
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: rgba(255, 255, 255, 0.65);
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 2rem 2rem;
-}
-
-.promo .jumbotron a.btn-primary {
-    margin-inline-end:2%;
-    margin-bottom:1%;
-}
-
-.promo .jumbotron {
-    margin-top: 100px;
-    width:80%;
-    min-width: 10rem;
-    background-color: rgba(255, 255, 255, 0.65);
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#many {
-    background-color: #333640 !important;
-    color:#e9ecef;
-}
-#many .jumbotron {
-    background-color: #333640 !important;
-}
-
-#many .jumbotron .container .row{
-    justify-content: center;
-}
-
-.jumbotron .lead  ul {
-    font-size: 1em;
-}
-
-
-.jumbotron .lead-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-}
-
-.jumbotron .lead-icons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 48em) {
-    .jumbotron h1 {
-        font-size: 1.8em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.2em;
-    }
-    .jumbotron p.lead {
-        font-size: smaller;
-    }
-    .jumbotron .lead-buttons {
-        flex-flow: column;
-    }
-    .jumbotron .lead-buttons .btn-lg {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .promo .jumbotron {
-        width: 95%;
-    }
-}
-
-@media (max-width: 62em) {
-    .jumbotron h1 {
-        font-size: 2.5em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.8em;
-    }
-    .jumbotron p.lead-bottom {
-        font-size: 1.6em;
-    }
-    .jumbotron p.lead {
-        font-size: 1.2em;
-    }
-    .jumbotron .lead-buttons .btn-lg {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .promo .jumbotron {
-        width: 95%;
-    }
-}
 p.lead-top {
     font-size: 1.8em;
 }
@@ -502,14 +335,13 @@ p.lead-bottom {
 
 /**END search results**/
 
-.view-archieplago-media-files {
-    margin-left: -10px;
+.table, .table-responsive {
+  --bs-table-striped-bg: rgba(233, 236, 239, 0.31);
 }
 
-.view-archieplago-media-files .container,
-.view-archieplago-media-files .table-responsive {
-    padding-left: 0px;
-
+#drupal-off-canvas > div > table > caption {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .view-id-activity .views-form,
@@ -532,6 +364,10 @@ p.lead-bottom {
     margin-left: 30px;
 }
 
+input.button {
+  width:auto;
+}
+
 /** Layout **/
 
 .layout--twocol {
@@ -549,6 +385,13 @@ div.view-content.row-bootstrap4.container > div:last-child .layout--twocol {
 /* node edit */
 #page details summary {
     color: #333333;
+}
+
+#page details div.details-wrapper, .ui-dialog div.details-wrapper {
+  background-color: rgba(233, 236, 239, 0.31);
+  padding: 1rem !important;
+  margin: 1rem !important;
+  padding-bottom: 0.5em;
 }
 
 div#sidebar_second.sidebar.col-md-3.order-last:empty {
