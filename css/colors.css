@@ -61,12 +61,6 @@ body {
     color: #b3ffe0;
 }
 
-navbar-dark .navbar-nav .nav-link:hover {
-  background-color:#0256b1 !important;
-}
-
-
-
 .site-name-slogan .navbar-brand-slogan {
     color: #ffffff;
 }
@@ -127,6 +121,7 @@ div > div.carousel-item.active > div > h3 {
 }
 .nav-tabs .nav-link:hover, .nav-link:focus {
     color: #4b82bf;
+    background-color:#0256b1 !important;
 }
 
 .link {
