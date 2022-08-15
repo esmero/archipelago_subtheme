@@ -37,13 +37,13 @@ section.region-top-header-form {
 }
 #main-wrapper a{
   text-decoration: underline;
-  text-decoration-thickness: 5%;
+  text-decoration-thickness: 0.05rem;
   text-decoration-color: inherit;
 }
 
 #main-wrapper a:hover{
   text-decoration: underline;
-  text-decoration-thickness: auto;
+  text-decoration-thickness: 0.1rem;
 }
 
 
