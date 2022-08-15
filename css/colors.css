@@ -126,11 +126,11 @@ div > div.carousel-item.active > div > h3 {
 
 .link {
     color: #4b82bf !important;
-    text-decoration-color: #007bff;
+    text-decoration-color: #007bff !important;
 }
 a:not(.toolbar-item) {
     color: #4b82bf !important;
-    text-decoration-color: #007bff;
+    text-decoration-color: #007bff !important;
 }
 
 
