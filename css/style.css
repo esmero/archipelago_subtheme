@@ -22,10 +22,16 @@ section.region-top-header-form {
   display:flex;
 }
 
+.form-row > .js-form-item {
+  margin: 0;
+}
+
 /* Restore navbar padding */
 #page .navbar {
   padding: 0.5rem 1rem;
 }
+
+
 
 #page details summary {
     color: #0071b3;
