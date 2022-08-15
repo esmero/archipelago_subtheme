@@ -35,9 +35,15 @@ section.region-top-header-form {
 #page a{
   text-decoration: none;
 }
+#main-wrapper a{
+  text-decoration: underline;
+  text-decoration-thickness: 5%;
+  text-decoration-color: inherit;
+}
 
 #main-wrapper a:hover{
   text-decoration: underline;
+  text-decoration-thickness: auto;
 }
 
 

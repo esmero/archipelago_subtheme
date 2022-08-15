@@ -27,8 +27,9 @@ body {
     background-color: #ffffff;
     border-bottom-color: #ffffff;
 }
-table tr th {
-    background: #000000;
+#main-wrapper table thead.thead-dark tr th {
+    background: #ffa500;
+    color: #f7f7f7;
     border-bottom-style: none;
 }
 
@@ -59,6 +60,13 @@ table tr th {
 .navbar-dark .navbar-nav .nav-link {
     color: #b3ffe0;
 }
+
+navbar-dark .navbar-nav .nav-link:hover {
+  background-color:#0256b1 !important;
+}
+
+
+
 .site-name-slogan .navbar-brand-slogan {
     color: #ffffff;
 }
