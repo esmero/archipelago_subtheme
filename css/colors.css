@@ -127,12 +127,10 @@ div > div.carousel-item.active > div > h3 {
 .link {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
-    text-decoration-thickness: 3px;
 }
 a:not(.toolbar-item) {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
-    text-decoration-thickness: 3px;
 }
 
 
@@ -148,7 +146,6 @@ a:not(.toolbar-item):active,
 .link:active {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
-    text-decoration-thickness: 3px;
 }
 
 

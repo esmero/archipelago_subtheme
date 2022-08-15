@@ -45,6 +45,9 @@ section.region-top-header-form {
   text-decoration-thickness: 0.2rem;
 }
 
+#page .form-actions {
+  padding: 0;
+}
 
 #page details summary {
     color: #0071b3;
