@@ -36,10 +36,9 @@ section.region-top-header-form {
   text-decoration: none;
 }
 
-#page a:hover{
+#main-wrapper a:hover{
   text-decoration: underline;
 }
-
 
 
 #page details summary {
