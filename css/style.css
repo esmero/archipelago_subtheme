@@ -38,12 +38,13 @@ section.region-top-header-form {
 #main-wrapper a{
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
-  text-decoration-color: var(--bs-body-color);
+  text-decoration-color: var(--bs-body-color) !important;
 }
 
 #main-wrapper a:hover{
   text-decoration: underline;
   text-decoration-thickness: 0.2rem;
+  text-decoration-color: var(--bs-link-color) !important;
 }
 
 #page .form-actions {
