@@ -31,6 +31,15 @@ section.region-top-header-form {
   padding: 0.5rem 1rem;
 }
 
+/* Restore links to our style */
+#page a{
+  text-decoration: none;
+}
+
+#page a:hover{
+  text-decoration: underline;
+}
+
 
 
 #page details summary {
