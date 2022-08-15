@@ -38,6 +38,7 @@ section.region-top-header-form {
 #main-wrapper a{
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
+  text-decoration-color: var(--bs-body-color);
 }
 
 #main-wrapper a:hover{
