@@ -17,6 +17,16 @@ section.region-top-header-form {
     margin-top:0px;
 }
 
+/* Fix stupid Bootstrap 5 bug for 1.0.0*/
+#page .flex-nowrap {
+  display:flex;
+}
+
+/* Restore navbar padding */
+#page .navbar {
+  padding: 0.5rem 1rem;
+}
+
 #page details summary {
     color: #0071b3;
 }
