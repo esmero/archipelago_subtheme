@@ -11,6 +11,9 @@ libraries:
 
 libraries-override:
   bootstrap_barrio/bootstrap_cdn: archipelago_subtheme/bootstrap_cdn
+  facets_searchbox_widget/searchbox:
+    js:
+      js/searchbox.js: js/overrides/searchbox.js
 
 regions:
   top_header: 'Top Header'

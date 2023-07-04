@@ -45,6 +45,10 @@ section.region-top-header-form {
   text-decoration-color: rgba(var(--bs-body-color), 0.7) !important;
 }
 
+#main-wrapper li.nav-item {
+  margin-bottom: 0.5rem;
+}
+
 #main-wrapper .btn > a, #main-wrapper a.btn, #main-wrapper .btn a:hover, #main-wrapper a.btn:hover {
   text-decoration: none;
 }
