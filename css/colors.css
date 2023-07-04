@@ -1,7 +1,8 @@
 /* ---------- Color Module Styles ----------- */
 :root {
   --bs-body-color:#3b3b3b !important;
-  --bs-link-color: #007bff !important
+  --bs-link-color: #007bff !important;
+  --bs-primary: #007bff !important;
 }
 body {
     color: #3b3b3b;
@@ -91,7 +92,7 @@ main.main-content div.content {
     background-color: #007bff;
     border-color: #007bff;
 }
-nav > ul > li.active.nav-item > a {
+#page nav > ul > li.active.nav-item > a {
     background-color: #007bff !important;
     border-color: #007bff !important;
 }
@@ -108,8 +109,13 @@ nav > ul > li.active.nav-item > a {
     text-decoration-color:#4b82bf;
 }
 
-div > div.carousel-item.active > div > h3 {
-    background-color: #ffffff;
+#page div > div.carousel-item > div > h3 {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+#page div > div.carousel-item.active > div > h3 {
+    background-color: var(--bs-link-color);
 }
 
 .navbar-toggler {
@@ -125,6 +131,17 @@ div > div.carousel-item.active > div > h3 {
     color: #4b82bf;
     background-color:#0256b1 !important;
 }
+
+
+#page .nav-pills .nav-link.active, .nav-pills .show>.nav-link, .badge-primary {
+    color: #ffffff !important;
+    background-color: var(--bs-link-color);
+}
+
+.badge-primary > a.nav-link {
+  color: #ffffff !important;
+}
+
 
 .link {
     color: #4b82bf !important;

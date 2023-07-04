@@ -13,6 +13,10 @@ section.region-top-header-form {
     border: none;
 }
 
+#page .list-group > ul {
+  margin-bottom: 0.5rem;
+}
+
 #page .form-text {
     margin-top:0px;
 }

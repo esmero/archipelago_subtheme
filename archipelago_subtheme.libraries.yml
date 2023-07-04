@@ -8,6 +8,7 @@ global-styling:
       css/colors.css: {}
       css/custom.css: {}
       css/webform.css: {}
+      css/components/progress.css: { weight: -10 }
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: { weight: -49 }
