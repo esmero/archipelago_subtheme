@@ -124,6 +124,20 @@ section.region-top-header-form {
   transition: all 0.5s;
 }
 
+/* Facet autocomplete */
+
+input.facets-widget-searchbox {
+  background-color: rgba(255,255,255,1);
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+  border: solid 1px #333333;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 6px 10px 6px 10px;
+}
+
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete:focus {
     background-image: url(../../../../core/misc/throbber-inactive.png);
 }
