@@ -1,7 +1,7 @@
 name: Archipelago Base Theme
 type: theme
 description: 'Archipelago Bootstrap Theme.'
-core_version_requirement: ^9.3 || ^10
+core_version_requirement: ^9.5 || ^10
 base theme: bootstrap_barrio
 
 libraries:
