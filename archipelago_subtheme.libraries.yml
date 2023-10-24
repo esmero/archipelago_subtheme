@@ -3,7 +3,7 @@ global-styling:
   js:
     js/global.js: {}
   dependencies:
-    - drupal/once 
+    - core/once 
   css:
     component:
       css/style.css: {}
