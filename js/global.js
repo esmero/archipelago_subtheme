@@ -9,7 +9,8 @@
 
     Drupal.behaviors.archipelago_subtheme = {
         attach: function (context, settings) {
-            $(context).find('body').once('archipelago-subtheme-global').each(function () {
+        const elementsToAttach = once('archipelago-subtheme-global', 'body', context);
+          $(elementsToAttach).each(function (index, value) {
                 window.addEventListener('resize', function(event) {
                     // de-collapses if collapsed and media query restores large viewport.
                     let MOBILE_WIDTH = 992;
