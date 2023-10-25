@@ -104,7 +104,7 @@
   margin: 1rem 0.5rem;
 }
 
-.archipelago-subtheme #drupal-off-canvas-wrapper .fieldset, #drupal-off-canvas-wrapper fieldset {
+.archipelago-subtheme #drupal-off-canvas-wrapper .fieldset, .archipelago-subtheme #drupal-off-canvas-wrapper fieldset {
   border:none;
 }
 
