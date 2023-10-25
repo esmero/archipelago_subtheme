@@ -118,6 +118,11 @@
   --off-canvas-padding: 0rem;
   --off-canvas-focus-outline-width: 2px;
   padding: 0 var(--off-canvas-padding) var(--off-canvas-padding);
+  --off-canvas-first-cell-padding-start: 0.5rem;
+}
+
+.archipelago-subtheme #drupal-off-canvas-wrapper table {
+  --bs-table-bg: var(--off-canvas-background-color-dark);
 }
 
 archipelago-subtheme #drupal-off-canvas-wrapper details {
@@ -128,5 +133,25 @@ archipelago-subtheme #drupal-off-canvas-wrapper details {
   --off-canvas-details-summary-font-size: 0.875rem;
 }
 
+.archipelago-subtheme #drupal-off-canvas-wrapper tr {
+  border-bottom: none;
+}
+.archipelago-subtheme #drupal-off-canvas-wrapper th:first-child {
+  --off-canvas-table-cell-padding: 2px;
+  display: flex;
+  align-items: center;
+  min-height: 3.125rem;
+  gap: var(--off-canvas-table-cell-padding);
+}
 
+.archipelago-subtheme #drupal-off-canvas-wrapper table tr th,
+.archipelago-subtheme #drupal-off-canvas-wrapper table tr th a,
+.archipelago-subtheme #drupal-off-canvas-wrapper table tr th a:hover,
+.archipelago-subtheme #drupal-off-canvas-wrapper table tr th a:focus {
+  color: var(--off-canvas-background-color-light);
+}
+
+.archipelago-subtheme #drupal-off-canvas-wrapper .table >:not(caption)>*>td {
+  background-color: unset;
+}
 
