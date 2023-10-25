@@ -11,6 +11,10 @@ libraries:
 
 libraries-override:
   bootstrap_barrio/bootstrap_cdn: archipelago_subtheme/bootstrap_cdn
+  bootstrap_barrio/global-styling:
+    css:
+      component:
+        css/components/variables: css/components/variables.css
   facets_searchbox_widget/searchbox:
     js:
       js/searchbox.js: js/overrides/searchbox.js
