@@ -35,14 +35,8 @@
     padding-right:0 !important;
 }
 
-[data-drupal-selector="edit-content"] > .form-group {
-    padding-left:1rem !important;
-    padding-right:1rem !important;
-
-}
 [data-drupal-selector="edit-footer"] {
-    padding-left:0 !important;
-    padding-right:0 !important;
+    padding-right:2em !important;
 }
 
 [data-drupal-selector="edit-footer"] .form-group {
@@ -51,8 +45,8 @@
 }
 
 [data-drupal-selector="edit-footer"] > .form-group {
-    padding-left:1rem !important;
-    padding-right:1rem !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
 }
 
 
@@ -65,17 +59,6 @@
 /* This overrides the Jquery UI styles loaded by webform module */
 .ui-dialog-titlebar-close {
     padding:0 !important;
-}
-
-.ui-dialog-titlebar-close:after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-image: url(../img/ui-icons_888888_256x240.png);
-    /* position of the "X" in the icon sheet */
-    background-position: -95px -128px;
-    background-repeat: no-repeat;
 }
 
 /* bootstrap override for /core/modules/system/css/components/container-inline.module.css?qdeuar */
@@ -150,6 +133,15 @@
 .webform-multiple-table table tr:last-child td:last-child {
     border-bottom-right-radius: 6px;
 }
+/* Image preview */
+
+.webform-managed-file-preview-wrapper,
+.webform-managed-file-preview-wrapper.form-item {
+  display: table;
+  padding: 0.5em;
+  border: none !important;
+}
+
 
 /* ajax and throbbers */
 
@@ -168,6 +160,9 @@
     padding: 0 0.3125rem; /* 0 5px */
 }
 
+.webform-actions button {
+  margin-top:1em;
+}
 /**
  * Throbber.
  */

@@ -19,14 +19,19 @@ body.path-frontpage {
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
-    font-family: 'Mukta', sans-serif;
+/* Fixes Bootstrap 4.5.1 removing this for .col*/
+/* Making JS innerWidth() unexpectedly super width (scree width) when resizing a Canvas */
+#content.col {
+  min-width:0;
 }
 
 .content {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
+div[data-drupal-selector="edit-field-layout"] {
+  background: #ffffff;
+}
 pre code {
     display: block;
     padding: 10px;
@@ -42,8 +47,12 @@ pre code {
     -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
-/* FA and incons */
+/* FA and icons */
 /* this is a little bit tricky. */
+
+#navbar-top {
+  align-items: flex-start;
+}
 
 .nav-item .fa-li {
     left: 0em !important;
@@ -58,6 +67,13 @@ pre code {
     padding-left: 30px;
 }
 
+/* Bootstrap Barrio 5.5 adds white background to buttons */
+
+#navbar-top .form-actions {
+  background-color: transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 /**menu and nav styles**/
 
@@ -69,7 +85,6 @@ pre code {
     color: #fff;
     font-weight: 100;
     font-size: 1.5rem;
-    padding-left: 1.25rem;
     font-weight: 100;
 }
 
@@ -85,7 +100,6 @@ pre code {
 
 #navbar-top div:last-child {
     margin-left: auto;
-    align-self: flex-start;
 }
 
 
@@ -93,12 +107,6 @@ pre code {
     flex-flow: column;
     -webkit-flex-flow: column wrap; /* Safari 6.1+ */
 }
-
-
-#navbar-top .form-inline.navbar-form {
-    margin-top:0.385rem;
-}
-
 
 @media all and (max-width: 75em) {
     .navbar-expand-lg .navbar-collapse {
@@ -129,18 +137,10 @@ pre code {
 
     .navbar-expand-lg .navbar-collapse .nav-link {
         padding-left: 1rem;
-
-
     }
-   /* #navbar-top.navbar-expand-lg .navbar-collapse .nav-link::before {
-        content: "> ";
-        display:inline-block;
-        color:#B3FFE3;
-    }*/
 
     .navbar-expand-lg .navbar-collapse .nav-link:hover {
-        background: #001212;
-
+        background: #FFFFFF;
     }
 
     .navbar-dark .navbar-brand {
@@ -151,6 +151,10 @@ pre code {
         font-weight: 100;
         padding-top: 0.7rem;
     }
+    .navbar-brand-slogan {
+      padding-left: 1.25rem;
+    }
+
 
     .collapsing {
         transition: height 0.1s linear;
@@ -168,13 +172,14 @@ pre code {
         align-items: flex-start;
     }
 
-    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 220px !important;
+    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
+        width: 100% !important;
         flex: 1;
         transition: none !important;
     }
-    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
         transition: none !important;
+        width: 100% !important;
     }
 }
 
@@ -188,17 +193,16 @@ pre code {
         align-items: flex-start;
     }
 
-    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 175px !important;
+    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
+        width: 100% !important;
+        max-width: 175px;
         flex: 1;
         transition: none !important;
     }
-    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input{
         transition: none !important;
-    }
-    .jumbotron {
-        margin-left:0!important;
-        margin-right:0!important;
+        width: 100% !important;
+        max-width: 175px;
     }
 
 }
@@ -225,7 +229,6 @@ pre code {
 .block-views-exposed-filter-blocksolr-search-content-page-1 {
     display: flex;
     position: relative;
-    margin-right: 5px;
 }
 
 
@@ -238,18 +241,19 @@ pre code {
     display:none
 }
 
-
-
 /** END search box **/
 
 h1.title {
-    font-size: 2rem;
     margin-top: 1.25rem;
 }
 
-.field--name-display-field-copynode-formatted-metadata h2 {
-    font-size: 1.3em;
+/** Release 1.0.0 Bootstrap 5 gives these negative margins making it overlap with a viewer/anything before **/
+
+.field .blockquote-footer {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
 }
+
 
 /**home page promo stuff**/
 
@@ -263,167 +267,6 @@ h1.title {
     background-color: #e9ecef;
 }
 
-.background-front {
-    background-size: cover;
-    background-image: url(../img/front-colour.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.background-irun {
-    background-size: cover;
-    background-image: url(../img/irun-color.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.promo {
-    display: flex;
-    width: 100%;
-    padding:2%;
-    height: inherit;
-    justify-content: center;
-}
-
-.promo .jumbotron .container .row {
-    justify-content: center;
-}
-
-.promo2 {
-    display: flex;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding:2%;
-    height: inherit;
-}
-
-.promo .image-credit {
-    font-size: xx-small;
-    color: rgb(109, 207, 246);
-    opacity: 0.5;
-    flex-flow: row;
-    align-self: flex-end;
-    margin-top: auto;
-    justify-content: flex-start;
-    margin-left: auto;
-}
-
-.promo2 .jumbotron a.btn-primary {
-    margin-inline-end:2%;
-    margin-bottom:1%;
-}
-
-.promo2 .jumbotron {
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: rgba(255, 255, 255, 0.65);
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 2rem 2rem;
-}
-
-.promo .jumbotron a.btn-primary {
-    margin-inline-end:2%;
-    margin-bottom:1%;
-}
-
-.promo .jumbotron {
-    margin-top: 100px;
-    width:80%;
-    min-width: 10rem;
-    background-color: rgba(255, 255, 255, 0.65);
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#many {
-    background-color: #333640 !important;
-    color:#e9ecef;
-}
-#many .jumbotron {
-    background-color: #333640 !important;
-}
-
-#many .jumbotron .container .row{
-    justify-content: center;
-}
-
-.jumbotron .lead  ul {
-    font-size: 1em;
-}
-
-
-.jumbotron .lead-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-}
-
-.jumbotron .lead-icons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 48em) {
-    .jumbotron h1 {
-        font-size: 1.8em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.2em;
-    }
-    .jumbotron p.lead {
-        font-size: smaller;
-    }
-    .jumbotron .lead-buttons {
-        flex-flow: column;
-    }
-    .jumbotron .lead-buttons .btn-lg {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .promo .jumbotron {
-        width: 95%;
-    }
-}
-
-@media (max-width: 62em) {
-    .jumbotron h1 {
-        font-size: 2.5em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.8em;
-    }
-    .jumbotron p.lead-bottom {
-        font-size: 1.6em;
-    }
-    .jumbotron p.lead {
-        font-size: 1.2em;
-    }
-    .jumbotron .lead-buttons .btn-lg {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .promo .jumbotron {
-        width: 95%;
-    }
-}
 p.lead-top {
     font-size: 1.8em;
 }
@@ -434,20 +277,6 @@ p.lead-bottom {
     text-align: left;
     line-height: 1.6em;
     color: #33334d;
-}
-
-.btn-primary,
-.button--primary {
-    background-color:rgb(217, 120, 68);
-    border-color: rgb(217, 120, 68);
-    color: #fff;
-}
-
-.btn-primary:hover,
-.button--primary:hover {
-    color: #000;
-    background-color: #b3c6ff;
-    border-color: #b3c6ff;
 }
 
 #strawberryfield h1,
@@ -479,33 +308,6 @@ p.lead-bottom {
     background-color: #d1d1e0;
 }
 
-/**linked data, sidebars in general**/
-
-.sidebar .block {
-    background-color: #f2f2f2;
-}
-
-.sidebar .block.block-views-blockld-display-for-digital-objects-sql-block-1 {
-    border: 1px solid #e6e6e6;
-}
-
-.block-views-blockld-display-for-digital-objects-sql-block-1 {
-    color: #333333;
-}
-
-.block-views-blockld-display-for-digital-objects-sql-block-1 h2 {
-    text-shadow: none;
-    font-size: 1.2em;
-}
-
-.block-views-blockld-display-for-digital-objects-sql-block-1 a {
-    color: rgb(75, 130, 191)
-}
-
-.block-views-blockld-display-for-digital-objects-sql-block-1 a:hover {
-    color: #4b82bf;
-}
-
 /**site footer**/
 
 .site-footer {
@@ -528,19 +330,18 @@ p.lead-bottom {
 /**search results**/
 
 .view-solr-search-content h2 {
-    font-size: 1.4em;
+
 }
 
 /**END search results**/
 
-.view-archieplago-media-files {
-    margin-left: -10px;
+.table, .table-responsive {
+  --bs-table-striped-bg: rgba(233, 236, 239, 0.31);
 }
 
-.view-archieplago-media-files .container,
-.view-archieplago-media-files .table-responsive {
-    padding-left: 0px;
-
+#drupal-off-canvas > div > table > caption {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .view-id-activity .views-form,
@@ -563,19 +364,34 @@ p.lead-bottom {
     margin-left: 30px;
 }
 
+input.button {
+  width:auto;
+}
+
 /** Layout **/
 
 .layout--twocol {
-    margin: 0 0 1em;
-    padding-bottom: 5px;
+    margin: 0 0 1rem;
+    padding-bottom: 1rem;
     text-shadow: 0 1px 0 #fff;
-    font-size: 1.071em;
     line-height: 1.2;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.3);
+}
+
+div.view-content.row-bootstrap4.container > div:last-child .layout--twocol {
+    border-bottom: none !important;
 }
 
 /* node edit */
 #page details summary {
     color: #333333;
+}
+
+#page details div.details-wrapper, .ui-dialog div.details-wrapper {
+  background-color: rgba(233, 236, 239, 0.31);
+  padding: 1rem !important;
+  margin: 1rem !important;
+  padding-bottom: 0.5em;
 }
 
 div#sidebar_second.sidebar.col-md-3.order-last:empty {
@@ -595,6 +411,13 @@ div#sidebar_second.sidebar.col-md-3.order-last:empty {
 
 .carousel.slide {
     background-color: rgba(31,31,33,0.9);
+    border-radius: 6px;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+    transition: box-shadow .3s;
+}
+
+.carousel-inner {
+    border-radius: 6px;
 }
 
 .carousel-inner .active {
@@ -602,12 +425,30 @@ div#sidebar_second.sidebar.col-md-3.order-last:empty {
    filter: alpha(opacity=90); /* For IE 8 & 9 */
 }
 .carousel-control-prev-icon {
-    width:2.5em;
-    height:2.5em;
+    width:3rem;
+    height:3rem;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="black" stroke-width="2" stroke-linecap="round" d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"></path></svg>');
 }
 .carousel-control-next-icon {
-    width:2.5em;
-    height:2.5em;
+    width:3rem;
+    height:3rem;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="black" stroke-width="2" stroke-linecap="round" d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"></path></svg>');
+}
+
+/* remove padding for Views element content */
+main.main-content .views-element-container div.content {
+  padding: 0 0 0 0
+}
+
+/* Add spacing to pager in a views */
+ul.pagination {
+ padding-top:1.5rem;
+}
+
+
+/* Add top space to Tab/Tab panes */
+
+.tab-pane {
+  margin-top:1.5rem;
+  padding:.5rem 1rem;
 }

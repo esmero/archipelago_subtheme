@@ -45,7 +45,6 @@
  * - page.featured_top: Items for the featured top region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
- * - page.sidebar_second: Items for the second sidebar.
  * - page.featured_bottom_first: Items for the first featured bottom region.
  * - page.featured_bottom_second: Items for the second featured bottom region.
  * - page.featured_bottom_third: Items for the third featured bottom region.
@@ -62,29 +61,38 @@
  * - content_attributes: Items for the header region.
  * - sidebar_first_attributes: Items for the highlighted region.
  * - sidebar_second_attributes: Items for the primary menu region.
+ * - sidebar_collapse: If the sidebar_first will collapse.
  *
  * @see template_preprocess_page()
  * @see bootstrap_barrio_preprocess_page()
  * @see html.html.twig
  */
 #}
-
 {% block head %}
     {% if page.secondary_menu or page.top_header or page.top_header_form %}
-        <nav{{ navbar_top_attributes }}>
+        <nav{{ navbar_top_attributes}}>
             {% if container_navbar %}
             <div class="container">
                 {% endif %}
-                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                <button class="navbar-toggler navbar-toggler-left" type="button" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="{{ navbar_collapse_class }}" id="CollapsingNavbar">
+                {% if navbar_offcanvas %}
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                 {% endif %}
                     {{ page.secondary_menu }}
                     {{ page.top_header }}
                 </div>
                 {% if page.top_header_form %}
-                    <div class="form-inline navbar-form float-right">
+                    <div class="form-inline navbar-form justify-content-start">
                         {{ page.top_header_form }}
                     </div>
                 {% endif %}
+                  {% if navbar_offcanvas %}
+                </div>
+              {% endif %}
                 {% if container_navbar %}
             </div>
             {% endif %}
@@ -106,7 +114,7 @@
                 </div>
             {% endif %}
             {% if sidebar_collapse %}
-                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <button class="navbar-toggler navbar-toggler-left" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
             {% endif %}
             {% if container_navbar %}
         </div>
@@ -115,25 +123,25 @@
     {{ page.editor_toolbar }}
 {% endblock %}
 {% block content %}
-    <div id="main" class="{{ container }}">
-        {{ page.breadcrumb }}
-        <div class="row row-offcanvas row-offcanvas-left clearfix">
-            <main{{ content_attributes }}>
+        <div id="main" class="{{ container }}">
+          {{ page.breadcrumb }}
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+              <main{{ content_attributes }}>
                 <section class="section">
-                    <a id="main-content" tabindex="-1"></a>
-                    {{ page.content }}
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
                 </section>
-            </main>
+              </main>
             {% if page.sidebar_first %}
-                <div{{ sidebar_first_attributes }}>
-                    <aside class="section" role="complementary">
-                        {{ page.sidebar_first }}
-                    </aside>
-                </div>
+              <div{{ sidebar_first_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+                </aside>
+              </div>
             {% endif %}
             {# NO Second sidebar here #}
+          </div>
         </div>
-    </div>
 {% endblock %}
 {% block featured_bottom %}
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
