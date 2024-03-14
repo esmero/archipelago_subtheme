@@ -45,6 +45,9 @@
     {{ title }}
   {% endif %}
   {{ title_suffix }}
+  {% if pager %}
+    {{ pager }}
+  {% endif %}
   {% if header %}
     <div class="view-header row-bootstrap4 container">
       {{ header }}
