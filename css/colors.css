@@ -7,6 +7,12 @@
   --bs-tertiary: #2b3951 !important;
 }
 
+.archipelago-subtheme .page-item.active .page-link {
+	z-index: 3;
+	color: #fff;
+	background-color: var(--bs-link-color);
+	border-color: var(--bs-secondary);
+}
 
 .archipelago-subtheme #drupal-off-canvas-wrapper {
   --off-canvas-background-color-light: #f7f7f7;
@@ -195,12 +201,6 @@ a:not(.toolbar-item):active,
 .link:active {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
-}
-
-
-.page-item.active .page-link {
-    background-color: #0071b3;
-    border-color: #0071b3;
 }
 
 .page-link,
