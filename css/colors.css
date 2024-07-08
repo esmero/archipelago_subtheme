@@ -184,20 +184,20 @@ main.main-content div.content {
 .link {
     color: #4b82bf !important;
 }
-a:not(.toolbar-item) {
+a:not(.toolbar-item, .btn) {
     color: #4b82bf !important;
 }
 
 
-a:not(.toolbar-item):hover,
-a:not(.toolbar-item):focus,
+a:not(.toolbar-item, .btn):hover,
+a:not(.toolbar-item, .btn):focus,
 .link:hover,
 .link:focus {
     color: #4b82bf !important;
     decoration:none;
 }
 
-a:not(.toolbar-item):active,
+a:not(.toolbar-item, .btn):active,
 .link:active {
     color: #4b82bf !important;
     text-decoration-color: #007bff;
