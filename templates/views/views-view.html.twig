@@ -49,12 +49,12 @@
     {{ pager }}
   {% endif %}
   {% if header %}
-    <div class="view-header row-bootstrap4 container">
+    <div class="view-header row">
       {{ header }}
     </div>
   {% endif %}
   {% if exposed %}
-    <div class="view-filters row-bootstrap4 container">
+    <div class="view-filters row">
       {{ exposed }}
     </div>
   {% endif %}
@@ -65,7 +65,7 @@
   {% endif %}
 
   {% if rows %}
-    <div class="view-content row-bootstrap4 container">
+    <div class="view-content row">
       {{ rows }}
     </div>
   {% elseif empty %}
