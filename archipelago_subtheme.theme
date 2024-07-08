@@ -114,7 +114,8 @@ function archipelago_subtheme_preprocess_page(&$variables) {
   }
 
   $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
-  if ($fonts) {
+  if ($fonts && in_array($fonts, ['robot_cabin', 'belleza_average','archivo_glegoo'])) {
+	  // Other fonts will be managed by Bootstrap
     $variables['#attached']['library'][] = 'archipelago_subtheme/' . $fonts;
   }
 
