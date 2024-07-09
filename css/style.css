@@ -264,5 +264,14 @@ img.iiif-lazy:not([data-loaded='true']) {
   }
 }
 
+/* Deal with long titles on Book Reader when using
+"container" centered in Bootstrap.
+ */
+.BookReader a.BRreturn {
+  white-space: break-spaces;
+  max-width: 50%;
+  overflow: hidden;
+}
+
 
 
