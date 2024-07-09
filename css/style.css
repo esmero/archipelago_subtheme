@@ -204,6 +204,23 @@ main.main-content div.content {
   padding: 1em 1em 1em 1em
 }
 
+/* Allows Flex columns See ML*/
+main.main-content .section {
+  display: flex; flex-flow: row; flex-wrap: wrap;
+}
+#block-archipelago-subtheme-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+#block-archipelago-subtheme-views-block-similarity-ml-yolov8,
+#block-archipelago-subtheme-views-block-similarity-ml-imagenet,
+#block-archipelago-subtheme-views-block-similarity-ml-insightface {
+  flex-grow: 1;
+  width: 33%;
+  flex-flow: row;
+}
+
 /* Facet display */
 .facet-item {
  word-wrap: break-word;
