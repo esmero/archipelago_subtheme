@@ -184,20 +184,20 @@ main.main-content div.content {
 .link {
     color: #0071b3 !important;
 }
-a:not(.toolbar-item, .btn) {
+a:not(.toolbar-item, .btn, .nav-link) {
     color: #0071b3 !important;
 }
 
 
-a:not(.toolbar-item, .btn):hover,
-a:not(.toolbar-item, .btn):focus,
+a:not(.toolbar-item, .btn, .nav-link):hover,
+a:not(.toolbar-item, .btn, .nav-link):focus,
 .link:hover,
 .link:focus {
     color: #0071b3 !important;
     decoration:none;
 }
 
-a:not(.toolbar-item, .btn):active,
+a:not(.toolbar-item, .btn, .nav-link):active,
 .link:active {
     color: #0071b3 !important;
     text-decoration-color: #007bff;
