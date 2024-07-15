@@ -216,6 +216,10 @@ main.main-content div.content {
 main.main-content .section {
   display: flex; flex-flow: row; flex-wrap: wrap;
 }
+/* Viewers are getting crazy with the wrap but needed for multiple columns on views */
+.path-node main.main-content .section {
+   flex-wrap: nowrap;
+}
 #block-archipelago-subtheme-content {
   display:flex;
   flex-grow: 1;
