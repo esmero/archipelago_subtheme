@@ -102,6 +102,9 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: #b3ffe0;
 }
+.nav-item .nav-link {
+    color: #b3ffe0;
+}
 
 .site-name-slogan .navbar-brand-slogan {
     color: #fffeff;
@@ -162,7 +165,7 @@ main.main-content div.content {
     margin-top: 0.5rem;
 }
 
-.nav-link:hover, .nav-link:focus {
+#navbar-main .nav-link:hover, #navbar-main .nav-link:focus {
     color: #ffffff;
 }
 .nav-tabs .nav-link:hover, .nav-link:focus {
@@ -182,10 +185,10 @@ main.main-content div.content {
 
 
 .link {
-    color: #0071b3 !important;
+    color: #0071b3;
 }
 a:not(.toolbar-item, .btn, .nav-link) {
-    color: #0071b3 !important;
+    color: #0071b3;
 }
 
 
@@ -193,19 +196,19 @@ a:not(.toolbar-item, .btn, .nav-link):hover,
 a:not(.toolbar-item, .btn, .nav-link):focus,
 .link:hover,
 .link:focus {
-    color: #0071b3 !important;
+    color: #0071b3;
     decoration:none;
 }
 
 a:not(.toolbar-item, .btn, .nav-link):active,
 .link:active {
-    color: #0071b3 !important;
+    color: #0071b3;
     text-decoration-color: #007bff;
 }
 
 .page-link,
 .page-link:hover {
-    color: #0071b3 !important;
+    color: #0071b3;
 }
 
 dt {
