@@ -63,6 +63,9 @@ section.region-top-header-form {
 #main-wrapper .facet-item a {
    text-decoration: none;
 }
+#main-wrapper .facet-item a:hover {
+   text-decoration: underline;
+}
 
 
 #page .form-actions {
