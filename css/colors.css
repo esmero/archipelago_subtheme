@@ -99,7 +99,7 @@ body {
     border: solid 1px #b3ffe0;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+#page .navbar-dark .navbar-nav .nav-link {
     color: #b3ffe0;
 }
 /* Use base color here */
@@ -111,7 +111,7 @@ body {
     color: #fffeff;
 }
 
-#navbar-main .nav-link {
+#page #navbar-main .nav-link {
     color: #b3ffe0;
 }
 nav.navbar li.nav-item {
