@@ -59,6 +59,11 @@ section.region-top-header-form {
   text-decoration-thickness: 0.2rem;
   text-decoration-color: var(--bs-link-color) !important;
 }
+/* Removes underlines for Facets */
+#main-wrapper .facet-item a {
+   text-decoration: none;
+}
+
 
 #page .form-actions {
   padding: 0 0.75rem 0 0.5rem;
