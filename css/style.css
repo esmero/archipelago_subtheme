@@ -221,7 +221,8 @@ main.main-content .section {
    flex-wrap: nowrap;
 }
 #block-archipelago-subtheme-content {
-  display:flex;
+  /* Removed now that we don't use flex wrap on node 
+   display:flex; */
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 100%;
