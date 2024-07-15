@@ -258,7 +258,7 @@ h1.title {
 /**home page promo stuff**/
 
 #main-wrapper {
-  padding-bottom: 400px;
+  /* padding-bottom: 400px; */
   /** 50px more than the footer **/
   margin-left: 0;
 }
@@ -311,10 +311,11 @@ p.lead-bottom {
 /**site footer**/
 
 .site-footer {
-  position: absolute;
+  position: relative;
+  display: flex;
   width: 100%;
   bottom: 0;
-  min-height: 350px;
+  min-height: 20rem;
   padding: 2rem 1rem;
 }
 
