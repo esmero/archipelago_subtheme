@@ -60,10 +60,10 @@ section.region-top-header-form {
   text-decoration-color: var(--bs-link-color) !important;
 }
 /* Removes underlines for Facets */
-#main-wrapper .facet-item a {
+#main-wrapper . a {
    text-decoration: none;
 }
-#main-wrapper .facet-item a:hover {
+#main-wrapper . a:hover {
    text-decoration: underline;
 }
 
@@ -232,7 +232,9 @@ main.main-content .section {
 
 /* Facet display */
 .facet-item {
- word-wrap: break-word;
+   word-wrap: break-word;
+   display: inline-block;
+   width: 100%
 }
 
 /* iaBookreader */
