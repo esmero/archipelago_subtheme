@@ -137,14 +137,14 @@ main.main-content div.content {
 
 /* Webform progress tracker */
 .webform-progress-tracker .progress-title[role="link"] {
-    color: #4b82bf
+    color: #0071b3
 }
 
 .webform-progress-tracker .progress-title[role="link"]:hover,
 .webform-progress-tracker .progress-title[role="link"]:focus {
     text-decoration: underline;
-    color: #4b82bf;
-    text-decoration-color:#4b82bf;
+    color: #0071b3;
+    text-decoration-color:#0071b3;
 }
 
 #page div > div.carousel-item > div > h3 {
@@ -166,7 +166,7 @@ main.main-content div.content {
     color: #ffffff;
 }
 .nav-tabs .nav-link:hover, .nav-link:focus {
-    color: #4b82bf;
+    color: #0071b3;
     background-color:#0256b1 !important;
 }
 
@@ -182,10 +182,10 @@ main.main-content div.content {
 
 
 .link {
-    color: #4b82bf !important;
+    color: #0071b3 !important;
 }
 a:not(.toolbar-item, .btn) {
-    color: #4b82bf !important;
+    color: #0071b3 !important;
 }
 
 
@@ -193,13 +193,13 @@ a:not(.toolbar-item, .btn):hover,
 a:not(.toolbar-item, .btn):focus,
 .link:hover,
 .link:focus {
-    color: #4b82bf !important;
+    color: #0071b3 !important;
     decoration:none;
 }
 
 a:not(.toolbar-item, .btn):active,
 .link:active {
-    color: #4b82bf !important;
+    color: #0071b3 !important;
     text-decoration-color: #007bff;
 }
 
