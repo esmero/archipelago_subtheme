@@ -244,7 +244,7 @@ dt {
     line-height: 1.2;
 }
 
-.btn-primary {
+.archipelago-subtheme .btn-primary {
     background-color: #007bff !important;
     border-color: #007bff !important;
 }
@@ -254,10 +254,10 @@ dt {
     color: #007bff !important;
 }
 
-.btn {
+.archipelago-subtheme .btn {
   border-color: #007bff;
 }
-.btn:hover {
+.archipelago-subtheme .btn:hover {
   border-color: #007bff;
   background-color: #2b3951;
 }
@@ -266,8 +266,8 @@ dt {
     border-color: #007bff !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.archipelago-subtheme .btn-primary:hover,
+.archipelago-subtheme .btn-primary:focus {
     background-color:#0256b1 !important;
     border-color: #0256b1 !important;
 }
@@ -278,7 +278,7 @@ dt {
   border-color: #0256b1 !important;
 }
 
-.site-footer {
+.archipelago-subtheme .site-footer {
     background: #292929;
     background-repeat: repeat;
     background-blend-mode: multiply;
